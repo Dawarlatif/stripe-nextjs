@@ -10,7 +10,7 @@ import { useCart } from "@/contexts/cart-context";
 
 const Header = () => {
   const { totalItems, state } = useCart();
-  console.log(state);
+  // console.log(state);
   const [showCartPopup, setShowCartPopup] = useState(false);
   return (
     <header className="w-full p-4 bg-gray-800 text-white flex justify-between items-center">

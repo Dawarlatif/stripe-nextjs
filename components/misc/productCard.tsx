@@ -9,9 +9,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "../ui/button";
 
 interface ProductCardProps {
-  id: number;
+  id: string;
   title: string;
   description: string;
   availabilityStatus: string;
@@ -54,12 +55,9 @@ const ProductCard = ({
         <p>
           {price} <span className="font-bold">USD</span>
         </p>
-        <button
-          onClick={handleAddToCart}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md"
-        >
+        <Button onClick={handleAddToCart} variant="custom">
           Add to Cart
-        </button>
+        </Button>
       </CardFooter>
     </Card>
   );

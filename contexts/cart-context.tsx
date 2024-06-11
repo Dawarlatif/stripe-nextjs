@@ -8,7 +8,7 @@ import React, {
 } from "react";
 
 interface Product {
-  id: number;
+  id: string;
   title: string;
   price: number;
   description: string;

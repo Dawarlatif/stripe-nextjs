@@ -5,7 +5,7 @@ import ProductCard from "@/components/misc/productCard";
 import ListingPagination from "@/components/misc/ListingPagination";
 
 interface Product {
-  id: number;
+  id: string;
   title: string;
   price: number;
   description: string;
@@ -28,9 +28,10 @@ export default function ProductsPage() {
     )
       .then((res) => res.json())
       .then((data) => {
+        console.log("data", data);
         setProducts(data.products);
         if (data.total / PAGE_SIZE > 15) {
-          setTotalPages(5);
+          setTotalPages(3);
         } else setTotalPages(Math.ceil(data.total / PAGE_SIZE));
         setLoading(false);
       })

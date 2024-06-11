@@ -52,9 +52,8 @@ const CartPopup = () => {
             >
               Go to Cart
             </Link>
-            {/* <Image alt="clear cart" src={} width={30} height={30} /> */}
             <Link
-              className="bg-blue-500 text-white px-4 py-2 rounded-md"
+              className="bg-blue-500 text-white px-4 py-2 rounded-md items-center"
               href="/"
             >
               Checkout
